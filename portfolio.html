@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammed Shanib V — Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f5f7;
+    color:#111;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:20px 60px;
+    background:rgba(255,255,255,0.8);
+    backdrop-filter:blur(10px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 4px 20px rgba(0,0,0,0.05);
+    z-index:1000;
+}
+
+nav .logo{
+    font-size:22px;
+    font-weight:600;
+}
+
+nav ul{
+    display:flex;
+    gap:30px;
+}
+
+nav ul a{
+    text-decoration:none;
+    color:#222;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav ul a:hover{
+    color:#4A8FFF;
+}
+
+section{
+    padding:120px 60px;
+}
+
+.hero-container{
+    max-width:1200px;
+    margin:140px auto 0;
+    background:#fff;
+    border-radius:30px;
+    padding:60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.06);
+}
+
+.hero-left h1{
+    font-size:50px;
+    font-weight:700;
+    line-height:1.2;
+}
+
+.hero-left p{
+    margin-top:15px;
+    font-size:18px;
+    color:#555;
+}
+
+.status-pill{
+    padding:6px 16px;
+    background:#d9f7e8;
+    color:#1a8e4d;
+    display:inline-block;
+    border-radius:50px;
+    font-size:14px;
+    margin-bottom:20px;
+    font-weight:500;
+}
+
+.contact-btn{
+    margin-top:25px;
+    display:inline-block;
+    background:#000;
+    color:#fff;
+    padding:14px 28px;
+    border-radius:14px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.2s;
+}
+
+.contact-btn:hover{
+    background:#333;
+}
+
+.profile-card{
+    background:#fafafa;
+    padding:30px;
+    border-radius:24px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.05);
+    width:300px;
+}
+
+.profile-card img{
+    width:100%;
+    height:240px;
+    border-radius:20px;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.profile-card h3{
+    font-size:22px;
+    margin-bottom:8px;
+}
+
+.profile-card p{
+    font-size:14px;
+    color:#777;
+}
+
+.skills-grid{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:20px;
+}
+
+.skill-box{
+    background:white;
+    padding:22px;
+    border-radius:18px;
+    text-align:center;
+    font-weight:600;
+    font-size:16px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.06);
+    transition:0.2s;
+}
+
+.skill-box:hover{
+    transform:translateY(-4px);
+}
+
+form{
+    max-width:500px;
+    margin:30px auto 0;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+form input, form textarea{
+    padding:16px;
+    border-radius:14px;
+    border:1px solid #ddd;
+    font-size:16px;
+    background:#fff;
+}
+
+form button{
+    padding:16px;
+    border:none;
+    border-radius:14px;
+    background:#000;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+form button:hover{
+    background:#333;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#777;
+}
+
+@media (max-width:900px){
+    .hero-container{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">Muhammed Shanib V</div>
+    <ul>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </ul>
+</nav>
+
+<section id="home">
+    <div class="hero-container">
+        <div class="hero-left">
+            <div class="status-pill">Available for Work</div>
+            <h1>Heyy, I’m a<br>WEB DEVOLOPER</h1>
+            <p>I create clean, modern and meaningful digital experiences.</p>
+            <a href="#contact" class="contact-btn">Book a Call</a>
+        </div>
+
+        <div class="profile-card">
+            <img src="shanib.jpeg" alt="Profile">
+            <h3>Muhammed Shanib V</h3>
+            <p>Web Developer • Designer</p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2 style="font-size:32px; text-align:center; margin-bottom:20px;">About Me</h2>
+    <p style="text-align:center; max-width:700px; margin:auto; color:#555;">
+        BA English, RNTU University (2024).  
+        I focus on creating clean, modern and user-friendly digital experiences across web and mobile.
+    </p>
+</section>
+
+<section id="skills">
+    <h2 style="font-size:32px; text-align:center; margin-bottom:40px;">Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-box">Python</div>
+        <div class="skill-box">C</div>
+        <div class="skill-box">C++</div>
+        <div class="skill-box">HTML</div>
+        <div class="skill-box">JavaScript</div>
+        <div class="skill-box">Designing</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 style="font-size:32px; text-align:center; margin-bottom:20px;">PROJECTS</h2>
+    <p style="text-align:center; color:#555;">CURRENTLY UPDATING MY PORTFOLIO. STAY TUNED!</p>
+</section>
+
+<section id="contact">
+    <h2 style="font-size:32px; text-align:center; margin-bottom:20px;">Contact Me</h2>
+    <p style="text-align:center; color:#555;">Email:mshanib93@gmail.com • Phone: +91 8590178937</p>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    © 2025 Muhammed Shanib V — All Rights Reserved
+</footer>
+
+</body>
+</html>
